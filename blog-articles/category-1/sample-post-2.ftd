@@ -1,6 +1,6 @@
--- import: fifthtry.github.io/expand-ds/assets
--- import: fifthtry.github.io/expand-ds as ds
--- import: fifthtry.github.io/expand-ds/blog-authors/amitu as author
+-- import: fastn-community.github.io/expand-ds/assets
+-- import: fastn-community.github.io/expand-ds as ds
+-- import: fastn-community.github.io/expand-ds/blog-authors/amitu as author
 
 
 

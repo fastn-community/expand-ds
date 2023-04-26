@@ -1,5 +1,5 @@
--- import: fifthtry.github.io/expand-ds as ds
--- import: fifthtry.github.io/expand-ds/assets
+-- import: fastn-community.github.io/expand-ds as ds
+-- import: fastn-community.github.io/expand-ds/assets
 
 
 ;**** Configuration Starts **** 
@@ -140,7 +140,7 @@ designed and developed by FifthTry Private Ltd. Its a Banglore based start-up co
 FifthTry Private Ltd. is backed by [Y Combinators](https://www.fifthtry.com/). 
 They have designed `FTD` language for all technical and non-technical users. 
 
-I started using `FTD` by following very simple steps given on their [Author Docs](https://fifthtry.github.io/expand-ds/docs) tutorial.
+I started using `FTD` by following very simple steps given on their [Author Docs](https://fastn-community.github.io/expand-ds/docs) tutorial.
 
 I would recommend `FTD` for all authors, entrepreneurs, corporate groups and bloggers.
 

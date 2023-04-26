@@ -1,7 +1,7 @@
 -- import: fastn
 
--- fastn.package: fifthtry.github.io/expand-ds
-favicon: fifthtry.github.io/expand-ds/assets/static/favicon.ico
+-- fastn.package: fastn-community.github.io/expand-ds
+favicon: fastn-community.github.io/expand-ds/assets/static/favicon.ico
 
 -- fastn.dependency: fifthtry.github.io/code-block
 -- fastn.dependency: fifthtry.github.io/typography
@@ -33,19 +33,19 @@ readers: fastn-fans
 
 
 - Using expand-ds for FTD web projects: /docs/
-icon: -/fifthtry.github.io/expand-ds/static/primary-favorites.svg
+icon: -/fastn-community.github.io/expand-ds/static/primary-favorites.svg
 
 - How to use blog: /docs/blog/
-icon: -/fifthtry.github.io/expand-ds/static/primary-favorites.svg
+icon: -/fastn-community.github.io/expand-ds/static/primary-favorites.svg
 
 - Right-sidebar example: /docs/right-sidebar/
-icon: -/fifthtry.github.io/expand-ds/static/primary-favorites.svg
+icon: -/fastn-community.github.io/expand-ds/static/primary-favorites.svg
 
 - 404 `ds.not-found-1`: 404/
-icon: -/fifthtry.github.io/expand-ds/static/primary-favorites.svg
+icon: -/fastn-community.github.io/expand-ds/static/primary-favorites.svg
 
 - 404 `ds.not-found-2`: 404/not-found-2/
-icon: -/fifthtry.github.io/expand-ds/static/primary-favorites.svg
+icon: -/fastn-community.github.io/expand-ds/static/primary-favorites.svg
 
 # Blog: /featured-posts/
 
