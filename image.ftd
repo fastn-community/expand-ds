@@ -1,5 +1,5 @@
--- import: fifthtry.github.io/doc-site/assets
--- import: fifthtry.github.io/doc-site as ds
+-- import: fifthtry.github.io/expand-ds/assets
+-- import: fifthtry.github.io/expand-ds as ds
 
 -- ds.page: Image with Caption
 

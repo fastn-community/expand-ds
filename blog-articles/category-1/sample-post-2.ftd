@@ -1,6 +1,6 @@
--- import: fifthtry.github.io/doc-site/assets
--- import: fifthtry.github.io/doc-site as ds
--- import: fifthtry.github.io/doc-site/blog-authors/amitu as author
+-- import: fifthtry.github.io/expand-ds/assets
+-- import: fifthtry.github.io/expand-ds as ds
+-- import: fifthtry.github.io/expand-ds/blog-authors/amitu as author
 
 
 

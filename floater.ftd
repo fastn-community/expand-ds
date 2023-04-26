@@ -1,4 +1,4 @@
--- import: fifthtry.github.io/doc-site as ds
+-- import: fifthtry.github.io/expand-ds as ds
 
 
 -- $ds.show-floater: true
@@ -41,7 +41,7 @@ Floater can be enabled via adding below lines into `FASTN.ftd` file of your pack
 -- ds.code: add below lines into `FASTN.ftd` file
 lang: ftd
 
-\-- fastn.dependency: fifthtry.github.io/doc-site as ds
+\-- fastn.dependency: fifthtry.github.io/expand-ds as ds
 \-- fastn.auto-import: ds
 
 

@@ -1,4 +1,4 @@
--- import: fifthtry.github.io/doc-site/assets
+-- import: fifthtry.github.io/expand-ds/assets
 -- import: fifthtry.github.io/app-switcher as apps-switcher
 -- import: fastn
 -- import: fastn/processors as pr
@@ -120,18 +120,18 @@ author-meta author:
 
 
 
--- page: Introduction to doc-site
+-- page: Introduction to expand-ds
 
 We at FifthTry designed and developed `FTD` langauge for you. Using our own `FTD`
-language `doc-site` is designed for you to create FTD web-sites.
+language `expand-ds` is designed for you to create FTD web-sites.
 
 
 Check out our simple and easy [documentation](docs/) to learn more about
-`doc-site`.
+`expand-ds`.
 
 -- h2: 🚀 Project Structure
 
-Inside of your `doc-site` project, you'll see the following folders and files:
+Inside of your `expand-ds` project, you'll see the following folders and files:
 
 -- code:
 lang: text
@@ -166,7 +166,7 @@ lang: text
 │   └── docs.ftd
 │
 ├── static/
-│   └── All images and static assets included in doc-site
+│   └── All images and static assets included in expand-ds
 │
 ├── FASTN.ftd
 ├── index.ftd
