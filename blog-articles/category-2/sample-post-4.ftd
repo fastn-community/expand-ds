@@ -1,6 +1,6 @@
--- import: fifthtry.github.io/doc-site/assets
--- import: fifthtry.github.io/doc-site as ds
--- import: fifthtry.github.io/doc-site/blog-authors/arpita as author
+-- import: fifthtry.github.io/expand-ds/assets
+-- import: fifthtry.github.io/expand-ds as ds
+-- import: fifthtry.github.io/expand-ds/blog-authors/arpita as author
 
 
 ; Change below details for your new blog post

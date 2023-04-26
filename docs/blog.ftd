@@ -1,5 +1,5 @@
--- import: fifthtry.github.io/doc-site as ds
--- import: fifthtry.github.io/doc-site/assets
+-- import: fifthtry.github.io/expand-ds as ds
+-- import: fifthtry.github.io/expand-ds/assets
 
 
 
@@ -42,7 +42,7 @@ Currently working full time with FifthTry and building FTD and FASTN day and nig
 
 -- ds.h3: Let's understand above code snippet:
 
-In `doc-site` we have added `blog-authors` folder. Here you can create your name
+In `expand-ds` we have added `blog-authors` folder. Here you can create your name
 FTD file. e.g. `abrar.ftd` file. You can also add more authors incase you are 
 creating a blog with multiple authors or a blog for your company where multiple
 authors can write posts for your company blog.
@@ -76,9 +76,9 @@ snippet shows how to write post meta and create your post. [see sample post](blo
 -- ds.code: Example of how to create blog post 
 lang: ftd
 
-\-- import: fifthtry.github.io/doc-site as ds
-\-- import: fifthtry.github.io/doc-site/assets
-\-- import: fifthtry.github.io/doc-site/blog-authors/abrar as author
+\-- import: fifthtry.github.io/expand-ds as ds
+\-- import: fifthtry.github.io/expand-ds/assets
+\-- import: fifthtry.github.io/expand-ds/blog-authors/abrar as author
 
 \-- ds.post-meta meta: A day in a city of dreams
 published-on: July 22, 2014 at 10:02 pm
@@ -92,14 +92,14 @@ accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo in
 
 -- ds.h3: Let's understand above code snippet:
 
-✨ `-- import: fifthtry.github.io/doc-site as ds` : imports doc-site and all its
+✨ `-- import: fifthtry.github.io/expand-ds as ds` : imports expand-ds and all its
 components into your `FTD` page. 
 
-✨ `-- import: fifthtry.github.io/doc-site/assets` : helps to import assets from 
-`doc-site`. For ex. this assets import helps you to add images into your `FTD` 
+✨ `-- import: fifthtry.github.io/expand-ds/assets` : helps to import assets from 
+`expand-ds`. For ex. this assets import helps you to add images into your `FTD` 
 pages.
 
-✨ `-- import: fifthtry.github.io/doc-site/blog-authors/abrar as author` : imports
+✨ `-- import: fifthtry.github.io/expand-ds/blog-authors/abrar as author` : imports
 author meta data. You can add author details into `blog-authors/`. 
 
 In above example we have added `abrar` which links to `abrar.ftd` file from 
@@ -114,7 +114,7 @@ attribute. `$assets.files.static.image-placeholder.png` in this `$assets.files.`
 is default.
 
 FTD format to add a asset. `static` is a folder name, which you can see in your
-`doc-site` folder structure. `image-placeholder.png` image file name, in this 
+`expand-ds` folder structure. `image-placeholder.png` image file name, in this 
 case we have added `png` format image. 
 
 You can add any image format in it. e.g. `image-placeholder.jpg` or 
@@ -126,7 +126,7 @@ file `sample-post-1.ftd` which is stored inside `/blog-articles/` is folder and
 `category-1` is a category folder. You can rename it with your desired name.
 
 ✨ `author` attribute helps to add author details. `$author.abrar` in this `$author`
-is imported via `-- import: fifthtry.github.io/doc-site/blog-authors/abrar as author`
+is imported via `-- import: fifthtry.github.io/expand-ds/blog-authors/abrar as author`
 line into your blog post. `abrar` is a `abrar.ftd` file which contains author 
 details.
 
@@ -141,7 +141,7 @@ inside `featured-post` page.
 -- ds.h1: Creating featured posts page
 
 Its very common to display a list of top/latest posts as a blog home page. Our
-`doc-site` blog feature helps you to create your favorite blog posts list home 
+`expand-ds` blog feature helps you to create your favorite blog posts list home 
 page.
 
 Its very simple to create your top/latest featured posts using `-- ds.posts` which
@@ -153,11 +153,11 @@ Let's understand how to create it.
 -- ds.code: Example of how to use `-- ds.posts`
 lang: ftd
 
-\-- import: fifthtry.github.io/doc-site as ds
-\-- import: fifthtry.github.io/doc-site/blog-articles/category-1/sample-post-1
-\-- import: fifthtry.github.io/doc-site/blog-articles/category-1/sample-post-2 
-\-- import: fifthtry.github.io/doc-site/blog-articles/category-2/sample-post-3 
-\-- import: fifthtry.github.io/doc-site/blog-articles/category-2/sample-post-4
+\-- import: fifthtry.github.io/expand-ds as ds
+\-- import: fifthtry.github.io/expand-ds/blog-articles/category-1/sample-post-1
+\-- import: fifthtry.github.io/expand-ds/blog-articles/category-1/sample-post-2 
+\-- import: fifthtry.github.io/expand-ds/blog-articles/category-2/sample-post-3 
+\-- import: fifthtry.github.io/expand-ds/blog-articles/category-2/sample-post-4
 
 \-- ds.page:
 
@@ -179,10 +179,10 @@ post-data: $sample-post-4.meta
 
 -- ds.h3: Let's understand above code snippet:
 
-`-- import: fifthtry.github.io/doc-site as ds` : imports doc-site and all its
+`-- import: fifthtry.github.io/expand-ds as ds` : imports expand-ds and all its
 components into your `featured-post.ftd` page. 
 
-`\-- import: fifthtry.github.io/doc-site/blog-articles/category-1/sample-post-1` 
+`\-- import: fifthtry.github.io/expand-ds/blog-articles/category-1/sample-post-1` 
 : imports `sample-post-1` and its all details from `/blog-articles/category-1/` 
 folder. You can add more posts imports into `featured-post.ftd` like shown in 
 above code snippet.

@@ -1,5 +1,5 @@
--- import: fifthtry.github.io/doc-site as ds
--- import: fifthtry.github.io/doc-site/assets
+-- import: fifthtry.github.io/expand-ds as ds
+-- import: fifthtry.github.io/expand-ds/assets
 
 
 ;**** Configuration Starts **** 
@@ -16,14 +16,14 @@ background-color: $fastn.color.main.cta-secondary.text
 
 
 
--- ds.page: Using `doc-site` for [FTD](https://ftd.dev/) web projects
+-- ds.page: Using `expand-ds` for [FTD](https://ftd.dev/) web projects
 
 We at FifthTry designed and developed [FTD](https://ftd.dev/) langauge for you. Using our own [FTD](https://ftd.dev/)
-language `doc-site` is designed for you to create your documentation sites. 
-`doc-site` also helps authors, entrepreneurs, corporate groups and bloggers to
+language `expand-ds` is designed for you to create your documentation sites. 
+`expand-ds` also helps authors, entrepreneurs, corporate groups and bloggers to
 create their own web projects using [FTD](https://ftd.dev/) language.
 
-This simple and easy documentation will help you to modify or update original `doc-site`
+This simple and easy documentation will help you to modify or update original `expand-ds`
 with your own web projects.
 
 
@@ -38,7 +38,7 @@ below steps.
 
 -- ds.h2: Editing `index.ftd` & updating default content
 
-`index.ftd` is added by default to your `FTD` `doc-site`. Let's edit its default
+`index.ftd` is added by default to your `FTD` `expand-ds`. Let's edit its default
 content with your new content.
 
 🔏 To edit `index.ftd` file click on `index.ftd` file from your `GitHub` repository 
@@ -140,7 +140,7 @@ designed and developed by FifthTry Private Ltd. Its a Banglore based start-up co
 FifthTry Private Ltd. is backed by [Y Combinators](https://www.fifthtry.com/). 
 They have designed `FTD` language for all technical and non-technical users. 
 
-I started using `FTD` by following very simple steps given on their [Author Docs](https://fifthtry.github.io/doc-site/docs) tutorial.
+I started using `FTD` by following very simple steps given on their [Author Docs](https://fifthtry.github.io/expand-ds/docs) tutorial.
 
 I would recommend `FTD` for all authors, entrepreneurs, corporate groups and bloggers.
 
@@ -362,7 +362,7 @@ src: $assets.files.static.docs.fastn-sitemap-feature-output-homepage.png
 width.fixed.px: 750
 
 
--- ds.h1: Using `FTD` components inside `doc-site`
+-- ds.h1: Using `FTD` components inside `expand-ds`
 
 FifthTry has designed many `FTD` components for authors. By following simple 
 and easy steps you can use these components into your `FTD` projects.
@@ -422,9 +422,9 @@ src: $assets.files.static.docs.sidenote-from-bling-library.png
 width.fixed.px: 750
 
 
--- ds.h1: Using blog on doc-site
+-- ds.h1: Using blog on expand-ds
 
-FifthTry `doc-site` static/manual blog components are ready to use. By doing 
+FifthTry `expand-ds` static/manual blog components are ready to use. By doing 
 some changes you can start using blog components we have designed for you.
 
 These blog components are as follows:
