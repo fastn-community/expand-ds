@@ -4,10 +4,10 @@
 <meta charset="UTF-8"><base href="/expand-ds/">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 <title></title>
-<link rel="shortcut icon" href="fifthtry.github.io/expand-ds/assets/static/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="fastn-community.github.io/expand-ds/assets/static/favicon.ico" type="image/x-icon">
 <script type="ftd" id="ftd-data">
 {
-"fifthtry.github.io/expand-ds/modal/loader/#open": true,
+"fastn-community.github.io/expand-ds/modal/loader/#open": true,
 "ftd#breakpoint-width": {
 "mobile": 768
 },
@@ -736,7 +736,7 @@ margin-block-end: 1em;
 </head>
 <body style="height: 100%; margin: 0;">
 
-<div data-id="main" style="height: 100%; width: 100%" class="ft_common ft_column"><div data-id="0:main" onclick="window.ftd.handle_event(event, 'main', '[{&quot;name&quot;:&quot;ftd__set_bool___main&quot;,&quot;values&quot;:[[&quot;a&quot;,{&quot;mutable&quot;:true,&quot;reference&quot;:&quot;fifthtry.github.io/expand-ds/modal/loader/#open&quot;}],[&quot;v&quot;,false]]}]', this)" style="cursor: pointer; height: 100%; width: 100%" class="ft_common ft_column"><div data-id="0,0:main" style="align-items: center; background-color: rgba(0,0,0,1); height: 100%; justify-content: center; left: 0px; position: fixed; top: 0px; width: 100%" class="ft_common ft_column"><img data-id="0,0,0:main" src="https://i.giphy.com/media/6036p0cTnjUrNFpAlr/giphy.webp" style="align-self: center; height: 100px; width: 100px" class="ft_common"></img></div></div></div><style>
+<div data-id="main" style="height: 100%; width: 100%" class="ft_common ft_column"><div data-id="0:main" onclick="window.ftd.handle_event(event, 'main', '[{&quot;name&quot;:&quot;ftd__set_bool___main&quot;,&quot;values&quot;:[[&quot;a&quot;,{&quot;mutable&quot;:true,&quot;reference&quot;:&quot;fastn-community.github.io/expand-ds/modal/loader/#open&quot;}],[&quot;v&quot;,false]]}]', this)" style="cursor: pointer; height: 100%; width: 100%" class="ft_common ft_column"><div data-id="0,0:main" style="align-items: center; background-color: rgba(0,0,0,1); height: 100%; justify-content: center; left: 0px; position: fixed; top: 0px; width: 100%" class="ft_common ft_column"><img data-id="0,0,0:main" src="https://i.giphy.com/media/6036p0cTnjUrNFpAlr/giphy.webp" style="align-self: center; height: 100px; width: 100px" class="ft_common"></img></div></div></div><style>
 
 
 
@@ -1970,6 +1970,109 @@ new_string = new_string.replace('#', "__").replace('-', "_")
 .replace('/', "_").replace('.', "_");
 return new_string;
 };
+window.ftd.utils.node_change_call = function (id, key, data) {
+let node_function = `node_change_${id}`;
+if (!!window[node_function] && !!window[node_function][key]) {
+window[node_function][key](data);
+}
+};
+window.ftd.utils.set_value_helper = function (data, key, remaining, new_value) {
+if (!!remaining) {
+set_data_value(data, key + "." + remaining, new_value);
+}
+else {
+set_data_value(data, key, new_value);
+}
+};
+window.ftd.dependencies = {};
+window.ftd.dependencies.eval_background_size = function (bg) {
+if (typeof bg === 'object' && !!bg && "size" in bg) {
+let sz = bg.size;
+if (typeof sz === 'object' && !!sz && "x" in sz && "y" in sz) {
+return sz.x + " " + sz.y;
+}
+else {
+return sz;
+}
+}
+else {
+return null;
+}
+};
+window.ftd.dependencies.eval_background_position = function (bg) {
+if (typeof bg === 'object' && !!bg && "position" in bg) {
+let pos = bg.position;
+if (typeof pos === 'object' && !!pos && "x" in pos && "y" in pos) {
+return pos.x + " " + pos.y;
+}
+else {
+return pos.replace("-", " ");
+}
+}
+else {
+return null;
+}
+};
+window.ftd.dependencies.eval_background_repeat = function (bg) {
+if (typeof bg === 'object' && !!bg && "repeat" in bg) {
+return bg.repeat;
+}
+else {
+return null;
+}
+};
+window.ftd.dependencies.eval_background_image = function (bg, data) {
+if (typeof bg === 'object' && !!bg && "src" in bg) {
+let img_src = bg.src;
+if (!data["ftd#dark-mode"] && typeof img_src === 'object' && !!img_src && "light" in img_src) {
+return "url(" + img_src.light + ")";
+}
+else if (data["ftd#dark-mode"] && typeof img_src === 'object' && !!img_src && "dark" in img_src) {
+return "url(" + img_src.dark + ")";
+}
+else {
+return null;
+}
+}
+else {
+return null;
+}
+};
+window.ftd.dependencies.eval_box_shadow = function (shadow, data) {
+if (typeof shadow === 'object' && !!shadow) {
+var inset, blur, spread, x_off, y_off, color;
+inset = "";
+blur = spread = x_off = y_off = "0px";
+color = "black";
+if ("inset" in shadow) {
+if (shadow.inset)
+inset = "inset";
+}
+if ("blur" in shadow)
+blur = shadow.blur;
+if ("spread" in shadow)
+spread = shadow.spread;
+if ("x-offset" in shadow)
+x_off = shadow["x-offset"];
+if ("y-offset" in shadow)
+y_off = shadow["y-offset"];
+if ("color" in shadow) {
+if (data["ftd#dark-mode"]) {
+color = shadow.color.dark;
+}
+else {
+color = shadow.color.light;
+}
+}
+// inset, color, x_offset, y_offset, blur, spread
+let res = inset + " " + color + " " + x_off + " " + y_off + " " + blur + " " + spread;
+res = res.trim();
+return res;
+}
+else {
+return null;
+}
+};
 window.ftd.utils.add_extra_in_id = function (node_id) {
 let element = document.querySelector(`[data-id=\"${node_id}\"]`);
 if (element) {
@@ -2225,47 +2328,32 @@ return (ftd.toggle_rive_boolean(rive,input,args,data,id));
 window.node_change_main = {};
 window.node_change_main["0:main__display"] = function(data) {
 if(function(){
-return resolve_reference("fifthtry.github.io/expand-ds/modal/loader/#open", data);
+return resolve_reference("fastn-community.github.io/expand-ds/modal/loader/#open", data);
 }()){
 document.querySelector(`[data-id="0:main"]`).style["display"] = "flex";
 }
 else {document.querySelector(`[data-id="0:main"]`).style["display"] = "none";}
 }
 window.set_value_main = {};
-window.set_value_main["fifthtry.github.io/expand-ds/modal/loader/#open"] = function (data, new_value, remaining) {
-if (!!remaining) {
-set_data_value(data, "fifthtry.github.io/expand-ds/modal/loader/#open" + "." + remaining, new_value);
-} else {
-set_data_value(data, "fifthtry.github.io/expand-ds/modal/loader/#open", new_value);
-}
+window.set_value_main["fastn-community.github.io/expand-ds/modal/loader/#open"] = function (data, new_value, remaining) {
+window.ftd.utils.set_value_helper(data, "fastn-community.github.io/expand-ds/modal/loader/#open", remaining, new_value);
 
-window.ftd.call_mutable_value_changes("fifthtry.github.io/expand-ds/modal/loader/#open", "main");
-window.ftd.call_immutable_value_changes("fifthtry.github.io/expand-ds/modal/loader/#open", "main");
-if(!!window["node_change_main"] && !!window.node_change_main["0:main__display"]){window.node_change_main["0:main__display"](data);
-}
+window.ftd.call_mutable_value_changes("fastn-community.github.io/expand-ds/modal/loader/#open", "main");
+window.ftd.call_immutable_value_changes("fastn-community.github.io/expand-ds/modal/loader/#open", "main");
+window.ftd.utils.node_change_call("main","0:main__display", data);
 };
 
 window.set_value_main["ftd#dark-mode"] = function (data, new_value, remaining) {
-if (!!remaining) {
-set_data_value(data, "ftd#dark-mode" + "." + remaining, new_value);
-} else {
-set_data_value(data, "ftd#dark-mode", new_value);
-}
+window.ftd.utils.set_value_helper(data, "ftd#dark-mode", remaining, new_value);
 
 window.ftd.call_mutable_value_changes("ftd#dark-mode", "main");
 window.ftd.call_immutable_value_changes("ftd#dark-mode", "main");
-if(!!window["node_change_main"] && !!window.node_change_main["0,0,0:main__src"]){window.node_change_main["0,0,0:main__src"](data);
-}
-if(!!window["node_change_main"] && !!window.node_change_main["0,0:main__background-color"]){window.node_change_main["0,0:main__background-color"](data);
-}
-if(!!window["node_change_main"] && !!window.node_change_main["0,0:main__background-image"]){window.node_change_main["0,0:main__background-image"](data);
-}
-if(!!window["node_change_main"] && !!window.node_change_main["0,0:main__background-repeat"]){window.node_change_main["0,0:main__background-repeat"](data);
-}
-if(!!window["node_change_main"] && !!window.node_change_main["0,0:main__background-size"]){window.node_change_main["0,0:main__background-size"](data);
-}
-if(!!window["node_change_main"] && !!window.node_change_main["0,0:main__background-position"]){window.node_change_main["0,0:main__background-position"](data);
-}
+window.ftd.utils.node_change_call("main","0,0:main__background-repeat", data);
+window.ftd.utils.node_change_call("main","0,0:main__background-color", data);
+window.ftd.utils.node_change_call("main","0,0,0:main__src", data);
+window.ftd.utils.node_change_call("main","0,0:main__background-position", data);
+window.ftd.utils.node_change_call("main","0,0:main__background-image", data);
+window.ftd.utils.node_change_call("main","0,0:main__background-size", data);
 };
 
 

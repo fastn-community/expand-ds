@@ -1,5 +1,5 @@
--- import: fifthtry.github.io/expand-ds as ds
--- import: fifthtry.github.io/expand-ds/assets
+-- import: fastn-community.github.io/expand-ds as ds
+-- import: fastn-community.github.io/expand-ds/assets
 
 
 
@@ -76,9 +76,9 @@ snippet shows how to write post meta and create your post. [see sample post](blo
 -- ds.code: Example of how to create blog post 
 lang: ftd
 
-\-- import: fifthtry.github.io/expand-ds as ds
-\-- import: fifthtry.github.io/expand-ds/assets
-\-- import: fifthtry.github.io/expand-ds/blog-authors/abrar as author
+\-- import: fastn-community.github.io/expand-ds as ds
+\-- import: fastn-community.github.io/expand-ds/assets
+\-- import: fastn-community.github.io/expand-ds/blog-authors/abrar as author
 
 \-- ds.post-meta meta: A day in a city of dreams
 published-on: July 22, 2014 at 10:02 pm
@@ -92,14 +92,14 @@ accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo in
 
 -- ds.h3: Let's understand above code snippet:
 
-✨ `-- import: fifthtry.github.io/expand-ds as ds` : imports expand-ds and all its
+✨ `-- import: fastn-community.github.io/expand-ds as ds` : imports expand-ds and all its
 components into your `FTD` page. 
 
-✨ `-- import: fifthtry.github.io/expand-ds/assets` : helps to import assets from 
+✨ `-- import: fastn-community.github.io/expand-ds/assets` : helps to import assets from 
 `expand-ds`. For ex. this assets import helps you to add images into your `FTD` 
 pages.
 
-✨ `-- import: fifthtry.github.io/expand-ds/blog-authors/abrar as author` : imports
+✨ `-- import: fastn-community.github.io/expand-ds/blog-authors/abrar as author` : imports
 author meta data. You can add author details into `blog-authors/`. 
 
 In above example we have added `abrar` which links to `abrar.ftd` file from 
@@ -126,7 +126,7 @@ file `sample-post-1.ftd` which is stored inside `/blog-articles/` is folder and
 `category-1` is a category folder. You can rename it with your desired name.
 
 ✨ `author` attribute helps to add author details. `$author.abrar` in this `$author`
-is imported via `-- import: fifthtry.github.io/expand-ds/blog-authors/abrar as author`
+is imported via `-- import: fastn-community.github.io/expand-ds/blog-authors/abrar as author`
 line into your blog post. `abrar` is a `abrar.ftd` file which contains author 
 details.
 
@@ -153,11 +153,11 @@ Let's understand how to create it.
 -- ds.code: Example of how to use `-- ds.posts`
 lang: ftd
 
-\-- import: fifthtry.github.io/expand-ds as ds
-\-- import: fifthtry.github.io/expand-ds/blog-articles/category-1/sample-post-1
-\-- import: fifthtry.github.io/expand-ds/blog-articles/category-1/sample-post-2 
-\-- import: fifthtry.github.io/expand-ds/blog-articles/category-2/sample-post-3 
-\-- import: fifthtry.github.io/expand-ds/blog-articles/category-2/sample-post-4
+\-- import: fastn-community.github.io/expand-ds as ds
+\-- import: fastn-community.github.io/expand-ds/blog-articles/category-1/sample-post-1
+\-- import: fastn-community.github.io/expand-ds/blog-articles/category-1/sample-post-2 
+\-- import: fastn-community.github.io/expand-ds/blog-articles/category-2/sample-post-3 
+\-- import: fastn-community.github.io/expand-ds/blog-articles/category-2/sample-post-4
 
 \-- ds.page:
 
@@ -179,10 +179,10 @@ post-data: $sample-post-4.meta
 
 -- ds.h3: Let's understand above code snippet:
 
-`-- import: fifthtry.github.io/expand-ds as ds` : imports expand-ds and all its
+`-- import: fastn-community.github.io/expand-ds as ds` : imports expand-ds and all its
 components into your `featured-post.ftd` page. 
 
-`\-- import: fifthtry.github.io/expand-ds/blog-articles/category-1/sample-post-1` 
+`\-- import: fastn-community.github.io/expand-ds/blog-articles/category-1/sample-post-1` 
 : imports `sample-post-1` and its all details from `/blog-articles/category-1/` 
 folder. You can add more posts imports into `featured-post.ftd` like shown in 
 above code snippet.

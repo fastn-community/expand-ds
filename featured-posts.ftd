@@ -1,8 +1,8 @@
--- import: fifthtry.github.io/expand-ds as ds
--- import: fifthtry.github.io/expand-ds/blog-articles/category-1/sample-post-1
--- import: fifthtry.github.io/expand-ds/blog-articles/category-1/sample-post-2 
--- import: fifthtry.github.io/expand-ds/blog-articles/category-2/sample-post-3 
--- import: fifthtry.github.io/expand-ds/blog-articles/category-2/sample-post-4
+-- import: fastn-community.github.io/expand-ds as ds
+-- import: fastn-community.github.io/expand-ds/blog-articles/category-1/sample-post-1
+-- import: fastn-community.github.io/expand-ds/blog-articles/category-1/sample-post-2 
+-- import: fastn-community.github.io/expand-ds/blog-articles/category-2/sample-post-3 
+-- import: fastn-community.github.io/expand-ds/blog-articles/category-2/sample-post-4
 
 -- ds.page:
 
