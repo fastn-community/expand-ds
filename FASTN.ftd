@@ -9,6 +9,7 @@ favicon: fastn-community.github.io/expand-ds/assets/static/favicon.ico
 -- fastn.dependency: fifthtry.github.io/app-switcher
 -- fastn.dependency: fifthtry.github.io/header
 -- fastn.dependency: fifthtry.github.io/dark-mode-switcher
+-- fastn.dependency: fifthtry.github.io/bling as bling
 
 
 
@@ -17,6 +18,8 @@ favicon: fastn-community.github.io/expand-ds/assets/static/favicon.ico
 -- fastn.auto-import: fifthtry.github.io/code-block as cb
 -- fastn.auto-import: fifthtry.github.io/header as h
 -- fastn.auto-import: fifthtry.github.io/typography as tf
+-- fastn.auto-import: bling/chat as chat
+
 
 
 /-- fastn.app: Todos for Family
