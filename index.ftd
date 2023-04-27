@@ -120,82 +120,61 @@ author-meta author:
 
 
 
--- page: Introduction to expand-ds
+-- page: Welcome to your [FASTN site](https://fastn.io/)
 
-We at FifthTry designed and developed `FTD` langauge for you. Using our own `FTD`
-language `expand-ds` is designed for you to create FTD web-sites.
+-- ftd.column:
+align-self: center
 
+-- chat.message-left: Yo! I am Amit Upadhyay, CEO of FifthTry, welcome to the new world of FTD.
 
-Check out our simple and easy [documentation](docs/) to learn more about
-`expand-ds`.
+-- markdown: 
 
--- h2: 🚀 Project Structure
+You reached the right place, and from here let me assure you, your FTD journey is going superfast. 🙂
 
-Inside of your `expand-ds` project, you'll see the following folders and files:
+-- end: chat.message-left
 
--- code:
-lang: text
+-- chat.message-right:  😊 Liking this chat component?
 
-\
-├── .build/
-│   └── index.html
-│
-├── .packages/
-│   └── fifthtry.github.io/
-│   	└── All downloaded dependencies
-│
-├── blog-articles/
-│	├── category-1/
-│   │	├── index.ftd
-│   │   ├── sample-post-1.ftd
-│   │   └── sample-post-2.ftd
-│   │
-│   └── category-2/
-│   	├── index.ftd
-│       ├── sample-post-3.ftd
-│       └── sample-post-4.ftd
-│
-├── blog-authors/
-│   ├── abrar.ftd
-│   ├── amitu.ftd
-│   ├── arpita.ftd
-│   └── ganesh.ftd
-│
-├── documentation/
-│   ├── blog-docs.ftd
-│   └── docs.ftd
-│
-├── static/
-│   └── All images and static assets included in expand-ds
-│
-├── FASTN.ftd
-├── index.ftd
-├── featured-posts.ftd
-├── floater.ftd
-├── image.ftd
-├── LICENSE
-└── README.md
+-- markdown:
+
+[Click here to learn more](https://fifthtry.github.io/bling/chat/)
+👍
+
+-- end: chat.message-right
+
+-- end: ftd.column
+
+-- h1: How to use?
+
+It's very simple like making a sandwich. Create new `.ftd` file and just say:
+
+-- code: Add dependency to your FASTN.ftd
+lang: ftd
+
+\-- fastn.dependency: fastn-community.github.io/expand-ds
+\-- fastn.auto-import: fastn-community.github.io/expand-ds as ds
+
+-- markdown:
+
+Then create a new `.ftd` file and start writing.
+
+-- code: Use `-- ds.page`
+lang: ftd
+
+\-- ds.page: Your page title goes here
+
+Your page content goes here.
 
 
--- h2: 🧞 Commands
+-- h1: Need sidebar at right side of page?
 
-All commands are run from the root of the project, from a terminal:
-
--- code:
-lang: text
-
-========================================================================
-| Command            | Action                                          |
-|:-------------------|:------------------------------------------------|
-| fastn build        | FASTN builder installs all `FASTN` dependencies |
-| fastn serve        | Starts local dev server at available port       |
-|                    | `localhost:8000`                                |
-========================================================================
+Here it is, [use this document](https://fastn-community.github.io/expand-ds/docs/right-sidebar/).
 
 
--- h2: 👀 Want to learn more?
+-- h1: 👀 Learn FTD and become a pro?
 
-Feel free to check [our documentation](https://fastn.dev/) or jump into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
+You are one click away, just check [our documentation](https://fastn.dev/) and 
+dont forget to jump into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
 
 -- end: page
 
